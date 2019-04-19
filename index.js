@@ -13,7 +13,7 @@ const fs = require('fs');
 const bodyParser = require('body-parser');
 const aes256 = require('nodejs-aes256');
 const app = express();
-const apiKey = 'test'; // Could not publish the apiKey
+const apiKey = ${process.env.API_KEY}; // Could not publish the apiKey
 var router = express.Router();
 // For json data parsing
 app.use(bodyParser.json());
@@ -56,7 +56,7 @@ app.listen(process.env.PORT || 5000, function() {
 		    method: 'POST',
 		    headers: {
 		    	'Content-Type': 'application/json',
-		        'api-key': 'D9888A186405DA6FC4D1EE08BA96053FDF444C47A441D65DF141F3BDF73532F6'
+		        'api-key': ''
 		    },
 		    json: { 'seminarId': '20190313-01', "surveyInfo": sendMessageObject }
 	};
