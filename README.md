@@ -20,3 +20,5 @@ Easy to understanding to LINE users.
 
  1) Every script was splitted by their path. Of course it is not good program architect, but separated each js files would be working independent on.
  2) Small server, it oriented by 3 tier. The LIFF page is working with back-end server not Client node.js server.
+ 
+# All of encrypted id was expired
